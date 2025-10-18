@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  #ui {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  #startBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+  }
+  
+  #startBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  canvas {
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #000;
+  }
+  

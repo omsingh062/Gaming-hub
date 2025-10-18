@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamming Hub | Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form-wrapper">
+        <!-- Login Form -->
+        <div class="form-container" id="loginContainer">
+            <h1>GAMING HUB</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" id="loginUsername" name="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="loginEmail" name="signupEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter password" required>
+                        <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+                    </div>
+                </div>
+
+              
+
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="toggleForms()">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-container hidden" id="signupContainer">
+            <h1>Create Your Account</h1>
+            <form id="signupForm">
+
+                <div class="input-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="signupPassword" name="signupPassword" placeholder="Create a password" required>
+                        <span class="toggle-password" onclick="togglePassword('signupPassword')">👁️</span>
+                    </div>
+                </div>
+
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+            </form>
+        </div>
+    </div>
+<!-- <script src='./main page/index.html'></script> -->
+    <script type="module" src="login.js"></script>
+    <script type="module" src="Register.js"></script>
+</body>
+</html>

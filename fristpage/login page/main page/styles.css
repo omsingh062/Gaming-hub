@@ -1,0 +1,254 @@
+/* Reset default margins and paddings */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the navbar stays at the top */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 0; /* Top and bottom padding for height */
+    width: 100%; /* Ensure it spans the full width */
+    position: relative; /* Positioning */
+    z-index: 10; /* Make sure it stays above other content */
+    background: url('background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.main-content {
+    margin-top: 20px; /* Space below the navbar */
+    padding: 20px; /* Optional padding for the content */
+}
+
+.logo {
+    font-size: 28px; /* Slightly larger font for better visibility */
+    color: #00ff00;
+    margin-left: 20px; /* Add some margin for spacing from the edge */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px; /* Increased margin for spacing */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff00;
+}
+
+.search-user {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add some margin for spacing from the edge */
+}
+
+.search-user input {
+    padding: 8px; /* Increased padding for a better input size */
+    border-radius: 5px;
+    border: none;
+}
+
+.user-icon, .cart-icon {
+    margin-left: 20px; /* Increased margin for spacing */
+    color: white;
+    font-size: 24px; /* Slightly larger icons */
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position absolutely for dropdown */
+        top: 60px; /* Below the navbar */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        background-color: #1a1a1a; /* Same background color */
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+}
+.container {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between divs */
+    width: 100%;
+    justify-content: center;
+    background-image: url("background.png");
+    background-size: cover;
+
+}
+
+
+.image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.box {
+    width: 313px;
+    height: 313px;
+    background-color: #3498db; /* Change color if desired */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    border: 2px solid #2980b9; /* Border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    border-radius: 10px;
+}
+.box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: #3498db; /* Default background color */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.box:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clicked {
+    background-color: #2980b9; /* Change this to your desired clicked color */
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+#Dash{
+    background-image: url('./../KHELO/Dash.github.io-main/Dash.github.io-main/car\ icons.jpeg');
+    background-size: cover;
+}
+
+#space{
+    background-image: url('./../KHELO/space-invaders-master/cover-1591955301711.avif');
+    background-size: cover;
+}
+
+#breakout-master{
+    background-image: url('./../KHELO/breakout-master/breakout-master/th.jpeg');
+    background-size: cover;
+}
+
+#flappy-bird-master{
+    background-image: url('./../KHELO/flappy-bird-master/flappy-bird-master/icon.png');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* Right-side container */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 15px; /* Spacing between icon and logout */
+}
+
+/* Style for user icon */
+.user-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Style for Logout button */
+.logout-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #00ff00;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #00ff00;
+    color: #1a1a1a;
+}
+/* Container for icon + name */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Icon itself */
+.user-icon {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Name under the icon */
+.user-name {
+    margin-top: 4px;
+}

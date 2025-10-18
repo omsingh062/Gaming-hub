@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    background: #000;
+}
+
+#board {
+    background-image: url("https://wallpapercave.com/wp/wp9042679.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
+
+#startBtn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+#startBtn:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: sans-serif;
+    flex-direction: column; /* Stack the button and canvas vertically */
+}
+
+#startBtn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between button and canvas */
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+#startBtn:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+#board {
+    background-image: url("https://wallpapercave.com/wp/wp9042679.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none; /* Hide canvas initially */
+    border: 2px solid #333;
+    margin-top: 20px;
+}

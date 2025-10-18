@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- <h1>GAMING HUB</h1> -->    
+  <div class="button-container">
+    <button class="button" onclick="openModal('continue')">Continue</button>
+    <button class="button" onclick="openModal('about')">About Us</button>
+  </div>
+  
+
+  <!-- Modals -->
+  <div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+  <div class="modal" id="continueModal">
+    <h2>Welcome Back!</h2>
+    <p>The world is full of adventures, and every game is a new chapter. Ready to play?</p>
+    <button class="close-btn" onclick="loginfunction()">YES</button>
+  </div>
+
+  <div class="modal" id="aboutModal">
+    <h2>About Us</h2>
+    <p>Gaming Hub is your ultimate gateway to epic adventures. Dive into a world of immersive experiences, where each click takes you one step closer to unlocking new levels. Whether you're here to continue your journey or learn more about our community, the adventure awaits. Let's level up together!</p>
+    <button class="close-btn" onclick="closeModal()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
