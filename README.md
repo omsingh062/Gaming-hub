@@ -1,7 +1,5 @@
 # 🎮 Gaming Hub
 
-![Gaming Hub Banner](https://via.placeholder.com/1200x400?text=Gaming+Hub+Website+Preview)
-
 > A modern, interactive web-based gaming platform built with **HTML, CSS, and JavaScript**.  
 > Play multiple mini-games, enjoy smooth UI, and explore a responsive design — all from your browser!
 
@@ -42,7 +40,4 @@ This project demonstrates my skills in:
 | Deployment | [Render](https://render.com) |
 | Version Control | Git & GitHub |
 
----
-
-## 📂 Project Structure
 
